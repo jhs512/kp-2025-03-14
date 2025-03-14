@@ -27,6 +27,12 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("io.awspring.cloud:spring-cloud-aws-starter-s3:3.3.0")
+    implementation("cloud.localstack:localstack-utils")
+    
+    // TestContainers
+    testImplementation("org.testcontainers:testcontainers:1.19.7")
+    testImplementation("org.testcontainers:junit-jupiter:1.19.7")
+    testImplementation("org.testcontainers:localstack:1.19.7")
 }
 
 kotlin {
